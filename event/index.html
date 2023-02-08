@@ -1,0 +1,34 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <input id = 'button' type="button" value="Pasha">
+        <a href="https:\\www.google.com">здесь google</a>
+    </div>
+    
+    <script>
+        // присваивает событие ,выводит в консоле заданное value
+        button.onclick = (event) => console.log(event.target.getAttribute("value"));
+        function showTarget(event){
+            alert(`target ${event.target} current target ${event.currentTarget}`); // Выводит на экран выбранный обьект и текущий обработчик событий+
+        }
+        let divBlock = document.querySelector('div');
+        
+        function stop (event){
+            event.preventDefault();//отменяем действие по умолчанию 
+        }//Создание функции stop
+
+        let aElem = document.querySelector('a');
+        // Создаем собитие click
+        aElem.addEventListener('click', stop); //При нажатий на a виводим функцию stop
+        divBlock.addEventListener('click',showTarget); //При нажатий на div виводим функцию showTarget
+        button.addEventListener('click',showTarget);
+        document.body.addEventListener('click',showTarget); //При нажатий на body виводим функцию showTarget
+    </script>
+</body>
+</html>
