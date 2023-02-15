@@ -1,0 +1,32 @@
+* {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.game{
+    position: absolute;
+    width: 500;
+    height: 500px;
+    color: rgb(167, 167, 162);
+    box-shadow: 10, 10, 5px, 2px, black;
+    opacity: 0.9;
+}
+
+.game p{
+    display: flex;
+    align-items: top;
+    justify-content: top;
+}
+
+.gates{
+    width: 200px;
+    height: 200px;
+    border: 10px;
+    border-radius: 10px;
+}
+
+.content {
+    color: linear-gradient(142deg, rgba(58,63,180,1) 0%, rgba(14,255,0,1) 53%, rgba(252,69,69,1) 100%);
+}
