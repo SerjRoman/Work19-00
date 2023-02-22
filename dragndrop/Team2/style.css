@@ -1,0 +1,15 @@
+.container {
+    display: flex;
+    height: 800px;
+    width: 300px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #888;
+    background: rgb(45,196,137);
+    background: linear-gradient(90deg, rgba(45,196,137,1) 7%, rgba(49,215,221,1) 52%, rgba(200,208,79,1) 100%);
+    justify-content: space-between;
+}
+
+.block {
+    height: 20%;
+    width: 70%;
+}
