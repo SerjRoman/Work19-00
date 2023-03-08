@@ -1,0 +1,106 @@
+/* Роспростроняем на все */
+* {
+    /* устанавливаем внутриние отступи */
+    padding: 0;
+    /* устанавливаем внешний отступ */
+    margin: 0;
+    /* изменяем росчет ширини и висоти */
+    box-sizing: border-box;
+    /* изменяем шрифти */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* Розмер шрифта */
+    font-size: 18px;
+}
+/* задаем размери */
+html,body, .block-content {
+    /* ширина на все 100% */
+    width: 100%;
+    /* висота на все 100% */
+    height: 100%;
+}
+/* изменяем стили блоку со всем контентом */
+.block-content{
+    /* виставляем дисплею значение flex */
+    display: flex;
+    /* виравниваем flex елементи */
+    align-items: center;
+    /* роспредиление пространства вдоль flex контейнера */
+    justify-content: center;
+    /* виставляем градиент фону */
+    background: linear-gradient(320deg, #eb92be, #ffef78, #63c9b3);
+}  
+/* блок форми */
+.block-form {
+    /* накладиваем тени */
+    box-shadow: 0 0 30px rgba(35, 35, 35, 0.5);
+    /* виставляем ширину */
+    width: 400px;
+    /* виставляем автоматичискую висоту*/
+    height: auto;
+    /* cкругляем граници блока*/
+    border-radius: 30px;
+    /* изменяем цвет фона */
+    background: rgba(255, 255, 255, 0.3);
+
+}
+/* задаем клису input-form стили */
+.block-input-form {
+    /* изминение положения елементи */
+    position: relative;
+    /* виставляем дисплею значение flex */
+    display: flex;
+    /* указиваем росположение flex елементов*/
+    flex-direction: column;
+    /* виставляем ширину на все 100% */
+    width: 100%;
+}
+/* задаём стили классу input */
+.input {
+    /* внутренний отступ */
+    padding: 10px;
+    /*  ширина */
+    width: 80%;
+    /* высота */
+    height: 40px;
+    /* закругление */
+    border-radius: 15px;
+    /* позиционирование эл в документ */
+    position: relative;
+    /* внешний отступ */
+    margin: 5% auto;
+    /* граница */
+    border: none;
+    /* тень элемента */
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* задаём стиль класу .button-submit-for */
+.button-submit-form{
+   /* позиционирование эл в документ  */
+    position: relative;
+    /* элемент теперь блочный*/
+    display: block;
+    width: 80%;
+    /* ширина */
+    height: 40px;
+    /*  */
+    margin: 25px auto;
+}
+/*  стиль для .label-input */
+.label-input{
+    /* Задаем верхний отступ */
+    margin-top: 10px;
+    /* висота */
+    width: 90%;
+    /* задаем left */
+    left: 10%;
+    /* Задаем виравнивание текста */
+    text-align: left;
+}
+/* стиль .block-button-form */
+.block-button-form {
+    /* Задаем position */
+    position: relative;
+    /* висота */
+    width: 100%;
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="block-content">
+        <!-- div со всеми тегами -->
+        <div class="block-reg block-form">
+            <!-- создаем форму reg-->
+            <form action="#" id="reg">
+                <!-- div с формой регистрации -->
+                <div class="block-input-form">
+                    <!-- запрашиваем имя пользователя -->
+                    <label for="usename" class="label-input">Ім'я користувача:</label>
+                    <input class="input" id="username" type="text">
+                    <!-- запрашиваем почту пользователя -->
+                    <label for="email" class="label-input">Електронна пошта:</label>
+                    <input class="input" id="email" type="text">
+                    <!-- запрашиваем пароль пользователя -->
+                    <label for="password" class="label-input">Пароль:</label>                
+                    <input class="input" id="password" type="password">
+                    <!-- запрашиваем подтверждение пароля пользователя -->
+                    <label for="password" class="label-input">Підтвердження пароля:</label>  
+                    <input class="input" id="confirmPassword" type="password">
+                </div>
+                <!-- div с кнопками -->
+                <div class="block-button-form">
+                    <!-- кнопка регистрации -->
+                    <input type="submit" value="Реєстрація" class="button-submit-form">
+                    <!-- div с кнопками помощи -->
+                    <div class="block-button-help">
+                        <!-- кнопки помощи -->
+                        <div class="help-item">
+                            <button type="button" class="forget-password">Забули пароль?</button>
+                        </div>
+                        <div class="help-item">
+                            <button id= "buttonReg" class="change-login" type="button">
+                                Вже є обліковий запис?
+                            </button>
+                        </div>
+                    </div>
+                
+                </div>
+            </form>
+        </div>
+        <!-- div с формой -->
+        <div class="block-auth block-form" hidden>
+            <!-- создание формы -->
+            <form action="#" id="auth">
+                <!-- div текстовые поля -->
+                <div class="block-input-form">
+                    <!-- label - текст над инпутом -->
+                    <label for="email" class="label-input">Електронна пошта:</label>
+                    <!-- ввод електронной почты -->
+                    <input class="input" id="email" type="text">
+                    <!-- label - текст над инпутом -->
+                    <label for="password" class="label-input">Пароль:</label>
+                    <!-- ввод пароля -->
+                    <input class="input" id="password" type="password">
+                </div>
+                <!-- div c кнопками -->
+                <div class="block-button-form">
+                    <!-- кнопка отправки формы -->
+                    <input type="submit" value="Авторизуватися" class="button-submit-form">
+                    <!-- div с кнопками поддержки -->
+                    <div class="block-button-help">
+                         <!-- div с кнопкой помощи -->
+                        <div class="help-item">
+                            <!-- кнопка  восстановления пароля-->
+                            <button type="button" class="forget-password">Забули пароль?</button>
+                        </div>
+                        <!-- div с  кнопкой предложения на афторизацию-->
+                        <div class="help-item">
+                            <!-- кнопка авторизации -->
+                            <button id= "buttonAuth" class="change-login" type="button">
+                                Немає облікового запису?
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
