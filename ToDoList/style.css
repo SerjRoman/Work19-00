@@ -1,0 +1,106 @@
+*{
+    margin:0%;
+    padding: 0%;
+    box-sizing: border-box;
+
+}
+.wrapper{
+
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.block-tasks{
+    background-color: lightgray;
+    border: 2px solid black;
+    border-radius: 13px;
+    height: auto;
+    width: 500px;
+    /* position: ; */
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.main ul{
+    list-style-type: none;
+}
+
+.main ul li{
+    background-color: aquamarine;
+    border-radius: 15px;
+    border: 1px black solid;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    padding: 10px;
+}
+
+.block-text-task{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+}
+
+button{
+    background-color: none;
+    
+}
+
+/* Danya */
+
+
+
+.modal-window{
+    display:none;
+    width: 300px;
+    height: 300px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.block-create-task{
+    width: 300px;
+    height: 300px;
+    background: royalblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 4px solid black;
+    border-radius: 16px;
+    font-size: 20px;
+}
+.button-create-task{
+    width: 100%;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    height: auto;
+}
+
+.button-create-task button{
+    width: 100px;
+    height: auto;
+}
+.block-close-window{
+    position: absolute;
+    background: none;
+    width: 20px;
+    height: 20px;
+    right: 0;
+    top: 0;
+}
+.block-close-window button{
+    background: none;
+    border: none;
+}
+/* Nazar */

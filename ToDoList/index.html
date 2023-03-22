@@ -1,0 +1,59 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="modal-window">
+        <div class ="block-create-task">
+            <div class="block-name-task">
+                <label for="nameTask">Введите имя задания</label>
+                <input type="text" maxlength="20" id="nameTask">
+            </div>
+            <div class="block-description-task">
+                <label for="descriptionTask">Введите описание задания</label>
+                <textarea id="descriptionTask" cols="20" rows="5"></textarea>
+            </div>
+            <div class="button-create-task">
+                <button>Создать задачу</button>
+            </div>
+            <div class="block-close-window">
+                <button>&cross;</button>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="block-tasks">
+            <div class="main">
+                <ul class="list-tasks">
+                    <li class="task">
+                        <div class="block-text-task">
+                            <h1>task2</h1>
+                            <p>приготовить кастрюлю чая</p>
+                        </div>
+                        <div class="button-delete">
+                            <button>&cross;</button>
+                        </div>
+                    </li>
+                    <li class="task">
+                        <div class="block-text-task">
+                            <h1>task1</h1>
+                            <p>сварить пельменей</p>
+                        </div>
+                        <div class="button-delete">
+                            <button>&cross;</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer">
+                <button class="button-add-task">Додавання завдання</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
